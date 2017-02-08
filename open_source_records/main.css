@@ -1,0 +1,85 @@
+﻿<style type="text/css">
+html, body, h1, h2, h4, ul, li {
+padding: 0;
+border: 0;
+margin: 0;
+}
+
+body {
+padding: 0 0 0 0;
+background-color: #626671;
+}
+
+.header {
+padding: 10px, 10px, 10px, 10px;
+background-color: #8A0707;
+text-align: center;
+}
+
+.main-content {
+width: 700px;
+padding: 20px;
+border: 1px solid #8A0707;
+margin: 30px auto 0 auto;
+background-color: #7B7B7B;
+}
+
+h1 { 
+margin: 5px 0 5px 0;
+color: #FFFFFF;
+}
+
+p {
+font-size: 14px;
+padding: 10px 0 15px 0;
+color: #FFFFFF;
+}
+
+h2 { 
+margin: 20px 0 20px 0;
+color: #000000;
+border-bottom: 1px solid #8A0707;
+}
+
+h4 {
+font-size: 16px;
+margin: 15px 0 0 0;
+}
+
+h5 {
+font-size: 16px;
+margin: 0 0 15px 0;
+}
+
+a {
+text-decoration: none;
+color: #8A0707;
+}
+
+a:hover {
+text-decoration: underline;
+color: #8A0707;
+}
+
+.biography {
+color: #000000;
+}
+
+.pHome {
+color: #FFFFFF;
+}
+
+.pHome:hover {
+text-decoration:underline;
+color: #FFFFFF;
+}
+
+.pA {
+color: #000000;
+}
+
+.2albums li {
+display: inline;
+}
+
+</style>

@@ -1,0 +1,998 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   /* background: #533f47;*/
+   background: #ffffff url(../img/banner/img_bg_banner.png) no-repeat;
+/*    background-image: url(../img/banner/img_bg_banner.png);
+    background-repeat: no-repeat;*/
+    background-size: contain;
+}
+
+.wrapper {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.underline-white {
+    border-bottom: solid #FFFFFF 5px;
+}
+
+.underline-grey {
+    border-bottom: solid #353f47 5px;
+}
+
+i {
+    color: #FFFFFF;
+}
+
+/* =============================== header ========================== */
+
+header {
+    background: rgba(53, 63, 71, 0.854);
+    margin: 0  auto;
+    height: 100px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 30PX;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+header h1 .logo-e {
+    color: #4BCAFF;
+}
+
+header .header-title {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+header .navbar ul {
+    list-style-type: none;  
+}
+
+header .navbar ul li {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 15px;
+}
+
+header .navbar ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header .navbar ul li a:hover {
+    color: #4BCAFF;
+    border: solid 2px #4BCAFF;
+}
+
+body {
+    
+}
+.hero {
+    height: 600px;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h2 {
+    background: rgba(53, 63, 71, 0.854);
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+/*=========================== header ======================*/
+
+/*=========================== services =======================*/
+
+.section-services {
+    background: #4BCAFF;
+}
+
+.section-services h3, h4, p {
+    color: #FFFFFF;
+}
+
+.section-services h3 {
+    font-size: 30px;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+.section-services h4 {
+    font-size: 24px;
+}
+
+.section-services p {
+    font-size: 12px;
+}
+
+.coffee, .instant, .serious, .frame {
+    margin: 10px;
+}
+
+.serviceitems {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 100px;
+}
+
+/*=========================== services =======================*/
+
+/*=========================== portfolio =========================*/
+
+.section-portfolio {
+    background: #FFFFFF;
+}
+
+.section-portfolio h3 {
+    font-size: 30px;
+    color: #515f67;
+}
+
+.nav-categories ul li {
+    font-size: 14px;
+    list-style-type: none;
+    display: inline-block;
+    color: #515f67;
+    margin: 0 15px;
+}
+
+.portfolio-pictures img {
+    margin: 15px;
+}
+
+.portfolio-title {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+.portfolio-pictures-top-row {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.portfolio-pictures-bottom-row {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+/*=========================== portfolio ==============================*/
+
+/*=========================== just default section =====================*/
+
+.section-default {
+    background: #353f47;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-default h3 {
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.section-default p {
+    color: #FFFFFF;
+    margin: 15px 0;
+}
+
+.section-default-items {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0 50px 0;
+}
+
+.section-text {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px
+}
+
+.section-text h3 {
+    margin-bottom: 25px;
+}
+
+.video iframe {
+    width: 640px;
+    height: 360px;
+}
+
+/*===========================just default section ========================*/
+
+/*=========================== twitter ========================*/
+
+.section-twitter {
+    background: #4BCAFF;
+}
+
+.twitter-title {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+.section-twitter p {
+    font-size: 28px;
+    margin-bottom: 30px
+}
+
+.twitter-text {
+    padding-bottom: 45px;
+}
+
+.section-twitter h3 {
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+
+
+/*=========================== twitter =========================*/
+
+/*=========================== who is john doe ==========================*/
+
+.section-johndoe {
+    background-image: url(../img/john_doe/img_bg_john_doe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.section-johndoe h3 {
+    color: #FFFFFF;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+.section-johndoe p {
+    color: #FFFFFF;
+    margin: 15px 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.johndoe-items {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.johndoe-icons i {
+    border: solid 2px #FFFFFF;
+    padding: 15px;
+    margin: 20px;
+}
+
+
+
+/*=========================== who is john doe ==========================*/
+
+/*=========================== testimonials ========================*/
+
+.testimonials {
+    background: #FFFFFF;
+}
+
+.testimonials h3 {
+    color: #353f47;
+    font-size: 30px;
+}
+
+.testimonials p {
+    color: #353f47;
+    font-size: 28px;
+}
+
+.testimonials .testimonials-title .title-right p {
+    color: #353f47;
+    font-size: 72px;
+}
+
+.testimonials .testimonials-title {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+.testimonials .walter p {
+    font-size: 14px;
+    color: #4BCAFF;
+    margin-top: 35px;
+    padding-bottom: 75px;
+}
+
+
+/*=========================== testimonials ========================*/
+
+
+/*=========================== contact =========================*/
+.contact {
+    background-image: url(../img/contact/img_bg_contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact h3 {
+    color: #FFFFFF;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+.contact form label {
+    color: #FFFFFF;
+}
+
+.contact form #fullName {
+    height: 55px;
+    width: 465px;
+    background: rgba(53, 63, 71, 0);
+    margin-bottom: 25px;
+}
+
+.contact form #email {
+    height: 55px;
+    width: 465px;
+    background: rgba(53, 63 ,71, 0);
+    margin-bottom: 25px;
+}
+
+.contact textarea {
+    height: 220px;
+    width: 1180px;
+    background: rgba(53, 63, 71, 0);
+}
+
+.contact-top {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-paragraph {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-paragraph ul {
+    list-style-type: none;
+}
+
+.contact-paragraph ul li {
+    color: #FFFFFF;
+}
+
+.contact-paragraph p {
+    margin: 5px;
+    color: #FFFFFF;
+}
+
+textarea {
+    margin-bottom: 25px;
+}
+
+.message {
+    width: 360px;
+    height: 60px;
+    background-color: #4BCAFF;
+    color: #FFFFFF;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.messagebtn {
+    padding-bottom: 25px;
+}
+
+/* ================================================================== footer ===========================================*/
+
+footer {
+    height: 50px;
+    background: #353f47;
+}
+
+footer ul li, p {
+    color: #515F67;
+}
+
+footer ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+.footerstyle {
+    height: 50px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ============================ smaller screens =====================================*/
+
+@media only screen and (max-width: 1700px) {
+    .hero {
+        height: 400px! important;
+    }
+
+    .contact .contact-paragraph {
+        width: 300px! important;
+        margin-right: 500px! important;
+    }
+
+    .contact .contact-form {
+        width: 500px! important;
+    }
+
+    .contact-top {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact textarea {
+        width: 800px! important;
+    }
+
+    
+
+}
+
+@media only screen and (max-width: 1256px) {
+    .wrapper {
+        width: 900px!important;
+    }
+
+    .hero {
+        height: 300px! important;
+    }
+
+    .hero h2 {
+        font-size: 25px! important;
+    }
+
+    .section-services h3 {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+
+    .section-portfolio h3 {
+        font-size: 24px;
+    }
+
+    .portfolio-title {
+        padding-top: 10px;
+    }
+
+    .portfolio-pictures-small img {
+        margin: 100px;
+    }
+
+    .portfolio-pictures-small {
+/*        margin: 0;
+        padding: 0;*/
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+    
+    .portfolio-pictures {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .portfolio-pictures-top-row, .portfolio-pictures-bottom-row {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .section-default h3 {
+        font-size: 24px;
+    }
+
+    .section-default-items {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .section-default p {
+        font-size: 12px;
+    }
+
+    .section-twitter h3 {
+        font-size: 24px;
+    }
+
+    .twitter-title {
+        padding-top: 10px;
+    }
+
+    .twitter-text p {
+        font-size: 12px;
+    }
+
+    .section-johndoe h3 {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+
+    .johndoe-left p, .johndoe-right p {
+        font-size: 12px;
+    }
+
+    .johndoe-icons {
+        font-size: 10px;
+    }
+
+    .testimonials h3 {
+        font-size: 24px;
+    }
+
+    .testimonials .testimonials-title {
+        padding-top: 10px;
+    }
+
+    .testimonials p {
+        font-size: 12px;
+    }
+
+    .contact h3 {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 980px) {
+    .wrapper {
+        width: 650px !important;
+    }
+
+    .hero {
+        height: 200px !important;
+    }
+
+    .hero h2 {
+        font-size: 20px! important;
+    }
+
+    .portfolio-pictures img {
+        margin: 25px;
+    }
+
+    .section-johndoe {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .johndoe-icons i {
+        font-size: 16px;
+        padding: 5px;
+        margin: 1px;
+    }
+
+    .contact-items .contact-bottom textarea {
+        width: 465px! important;
+    }
+
+    .message {
+        width: 150px! important;
+    }
+
+}
+
+
+
+/*@media only screen and(max-width: 1700px) {
+    .hero {
+        height: 500px! important;
+    }
+    
+    .contact textarea {
+    width: 800px;
+    }
+
+    .contact .contact-paragraph {
+        width: 300px;
+        margin-right: 500px;
+    }
+
+    .contact .contact-form {
+        width: 500px;
+    }
+}
+
+@media only screen and(max-width: 1256px) {
+    .hero h2 {
+        font-size: 30px;
+    }
+}
+*/
+/* ================================================================== footer ===========================================*/
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
